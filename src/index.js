@@ -7,7 +7,16 @@ import { supabase } from './services/supabase.js';
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('Backend is running!');
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
 
 app.use(cors());
 app.use(express.json());

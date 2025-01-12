@@ -1,0 +1,11 @@
+services:
+  - name: android-app-backend
+    type: web
+    runtime: node
+    buildCommand: npm install
+    startCommand: node src/index.js
+    envVars:
+      - key: SUPABASE_URL
+        value: https://jetibjqxrmuzgzkvzmkd.supabase.co
+      - key: SUPABASE_API_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpldGlianF4cm11emd6a3Z6bWtkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzU5MTE5NzUsImV4cCI6MjA1MTQ4Nzk3NX0.Dv3mBHvFEilUp2_cMjo0kU_DEPqlseZk2UUDxKX2l8s
